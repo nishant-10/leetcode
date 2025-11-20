@@ -17,3 +17,20 @@ var strStr = function (haystack, needle) {
     }
     return position;
 };
+var strStr = function (haystack, needle) {
+    let i = 0; //haystack pointer
+    let j = 0; //needle pointer
+    while (i < haystack.length) {
+        if (needle[j] === haystack[i]) {
+            i++;
+            j++;
+            if (j === needle.length) {
+                return i - j;
+            }
+        } else {
+            i = i - j + 1;
+            j = 0;
+        }
+    }
+    return -1;
+}
