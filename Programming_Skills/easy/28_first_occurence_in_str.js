@@ -17,6 +17,7 @@ var strStr = function (haystack, needle) {
     }
     return position;
 };
+//pattern- two pointer
 var strStr = function (haystack, needle) {
     let i = 0; //haystack pointer
     let j = 0; //needle pointer
