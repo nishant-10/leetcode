@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/move-zeroes
 var plusOne = function(digits) {
     for (let i = digits.length - 1; i >= 0; i--) {
         digits[i]++;
@@ -13,3 +14,5 @@ var plusOne = function(digits) {
     digits.unshift(1);
     return digits;
 };
+
+//pattern - two pointer
